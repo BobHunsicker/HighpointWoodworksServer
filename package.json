@@ -1,0 +1,30 @@
+{
+  "name": "HighpointWoodworksServer",
+  "description": "Company Server for HighPoint WoodWorks",
+  "private": true,
+  "version": "0.1.0",
+  "homepage": "https://github.com/BobHunsicker/HighpointWoodworksServer",
+  "author": {
+    "name": "Bob Hunsicker",
+    "email": "rmhunsicker2@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/BobHunsicker/HighpointWoodworksServer.git"
+  },
+  "scripts": {
+    "postinstall": "typings install",
+    "start": "tsc && nodemon app.js",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "require": "^2.4.20"
+  },
+  "devDependencies": {
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4"
+  }
+}
